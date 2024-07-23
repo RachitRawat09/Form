@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="names">
+          <div class="first">
+            <label for="first-name">First Name *</label><br />
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="last">
+            <label for="last-name">Last Name *</label><br />
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">Email Address *</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <label class="query-type">Query Type * </label>
+        <div class="query">
+          <div class="radio-group one">
+            <label
+              ><input type="radio" name="query-type" value="general" required />
+              General Enquiry</label
+            >
+          </div>
+          <div class="radio-group two">
+            <label
+              ><input type="radio" name="query-type" value="support" required />
+              Support Request</label
+            >
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">Message *</label><br />
+          <input type="text" name="message" id="message" />
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent"
+            >I consent to being contacted by the team *</label
+          >
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
